@@ -16,3 +16,5 @@ D:\My projects\Codes\Code trainings\C#\myNotepad\myNotepad\obj\Debug\net5.0-wind
 D:\My projects\Codes\Code trainings\C#\myNotepad\myNotepad\obj\Debug\net5.0-windows\myNotepad.pdb
 D:\My projects\Codes\Code trainings\C#\myNotepad\myNotepad\obj\Debug\net5.0-windows\myNotepad.genruntimeconfig.cache
 D:\My projects\Codes\Code trainings\C#\myNotepad\myNotepad\obj\Debug\net5.0-windows\ref\myNotepad.dll
+D:\My projects\Codes\Code trainings\C#\myNotepad\myNotepad\bin\Debug\net5.0-windows\MaterialSkin.dll
+D:\My projects\Codes\Code trainings\C#\myNotepad\myNotepad\obj\Debug\net5.0-windows\myNotepad.csproj.CopyComplete

@@ -47,9 +47,14 @@
             designToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            blueThemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            whiteThemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             zoomInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             zoomOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            notepadProToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             richTextBox1 = new System.Windows.Forms.RichTextBox();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -57,7 +62,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { fileToolStripMenuItem, editToolStripMenuItem, designToolStripMenuItem, viewToolStripMenuItem });
+            menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { fileToolStripMenuItem, editToolStripMenuItem, designToolStripMenuItem, viewToolStripMenuItem, aboutToolStripMenuItem });
             menuStrip1.Location = new System.Drawing.Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new System.Drawing.Size(1153, 28);
@@ -74,28 +79,28 @@
             // newToolStripMenuItem
             // 
             newToolStripMenuItem.Name = "newToolStripMenuItem";
-            newToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
+            newToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             newToolStripMenuItem.Text = "New (Ctrl+N)";
             newToolStripMenuItem.Click += newToolStripMenuItem_Click;
             // 
             // openToolStripMenuItem
             // 
             openToolStripMenuItem.Name = "openToolStripMenuItem";
-            openToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
+            openToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             openToolStripMenuItem.Text = "Open (Ctrl+O)";
             openToolStripMenuItem.Click += openToolStripMenuItem_Click;
             // 
             // saveToolStripMenuItem
             // 
             saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            saveToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
+            saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             saveToolStripMenuItem.Text = "Save (Ctrl+S)";
             saveToolStripMenuItem.Click += saveToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
+            exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             exitToolStripMenuItem.Text = "Exit (Ctrl+E)";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
@@ -167,7 +172,7 @@
             // 
             // designToolStripMenuItem
             // 
-            designToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { colorToolStripMenuItem, fontToolStripMenuItem });
+            designToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { colorToolStripMenuItem, fontToolStripMenuItem, toolStripSeparator3, blueThemeToolStripMenuItem, whiteThemeToolStripMenuItem });
             designToolStripMenuItem.Name = "designToolStripMenuItem";
             designToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
             designToolStripMenuItem.Text = "Design";
@@ -175,16 +180,35 @@
             // colorToolStripMenuItem
             // 
             colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            colorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            colorToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
             colorToolStripMenuItem.Text = "Color";
             colorToolStripMenuItem.Click += colorToolStripMenuItem_Click;
             // 
             // fontToolStripMenuItem
             // 
             fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-            fontToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            fontToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
             fontToolStripMenuItem.Text = "Font";
             fontToolStripMenuItem.Click += fontToolStripMenuItem_Click;
+            // 
+            // toolStripSeparator3
+            // 
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new System.Drawing.Size(165, 6);
+            // 
+            // blueThemeToolStripMenuItem
+            // 
+            blueThemeToolStripMenuItem.Name = "blueThemeToolStripMenuItem";
+            blueThemeToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            blueThemeToolStripMenuItem.Text = "Dark Mode";
+            blueThemeToolStripMenuItem.Click += blueThemeToolStripMenuItem_Click;
+            // 
+            // whiteThemeToolStripMenuItem
+            // 
+            whiteThemeToolStripMenuItem.Name = "whiteThemeToolStripMenuItem";
+            whiteThemeToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            whiteThemeToolStripMenuItem.Text = "Light Mode";
+            whiteThemeToolStripMenuItem.Click += whiteThemeToolStripMenuItem_Click;
             // 
             // viewToolStripMenuItem
             // 
@@ -196,16 +220,30 @@
             // zoomInToolStripMenuItem
             // 
             zoomInToolStripMenuItem.Name = "zoomInToolStripMenuItem";
-            zoomInToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            zoomInToolStripMenuItem.Size = new System.Drawing.Size(209, 26);
             zoomInToolStripMenuItem.Text = "Zoom In (Ctrl++)";
             zoomInToolStripMenuItem.Click += zoomInToolStripMenuItem_Click;
             // 
             // zoomOutToolStripMenuItem
             // 
             zoomOutToolStripMenuItem.Name = "zoomOutToolStripMenuItem";
-            zoomOutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            zoomOutToolStripMenuItem.Size = new System.Drawing.Size(209, 26);
             zoomOutToolStripMenuItem.Text = "Zoom Out (Ctrl--)";
             zoomOutToolStripMenuItem.Click += zoomOutToolStripMenuItem_Click;
+            // 
+            // aboutToolStripMenuItem
+            // 
+            aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { notepadProToolStripMenuItem });
+            aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            aboutToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            aboutToolStripMenuItem.Text = "About ";
+            // 
+            // notepadProToolStripMenuItem
+            // 
+            notepadProToolStripMenuItem.Name = "notepadProToolStripMenuItem";
+            notepadProToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            notepadProToolStripMenuItem.Text = "Notepad pro";
+            notepadProToolStripMenuItem.Click += notepadProToolStripMenuItem_Click;
             // 
             // richTextBox1
             // 
@@ -226,7 +264,8 @@
             KeyPreview = true;
             MainMenuStrip = menuStrip1;
             Name = "Form1";
-            Text = "myNotepad";
+            Text = "Notepad Pro";
+            Load += Form1_Load;
             KeyDown += Form1_KeyDown;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
@@ -259,5 +298,10 @@
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zoomInToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zoomOutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem blueThemeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem whiteThemeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem notepadProToolStripMenuItem;
     }
 }

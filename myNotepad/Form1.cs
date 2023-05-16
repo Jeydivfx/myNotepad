@@ -1,6 +1,9 @@
-﻿using System;
+﻿using MaterialSkin;
+using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -15,7 +18,10 @@ namespace myNotepad
         public Form1()
         {
             InitializeComponent();
+
         }
+
+
 
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -197,11 +203,49 @@ namespace myNotepad
             if (e.Control && e.KeyCode == Keys.OemMinus)
             {
                 zoomOutToolStripMenuItem_Click(sender, e);
-               
+
             }
 
 
 
+        }
+
+        private void notepadProToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Notepad pro v1.1");
+        }
+
+        private void colorScheme(string key)
+        {
+            if (key == "dark")
+            {
+                menuStrip1.BackColor = Color.FromArgb(127, 143, 166);
+                richTextBox1.BackColor = Color.FromArgb(47, 54, 64);
+                richTextBox1.ForeColor = Color.FromArgb(245, 246, 250);
+            }
+
+            else
+            {
+                menuStrip1.BackColor = Color.FromArgb(245, 246, 250);
+                richTextBox1.BackColor = Color.FromArgb(245, 246, 250);
+                richTextBox1.ForeColor = Color.FromArgb(47, 54, 64);
+            }
+        }
+
+        private void blueThemeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            colorScheme("dark");
+        }
+
+        private void whiteThemeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            colorScheme("light");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            colorScheme("light");
+            richTextBox1.SelectionFont = new Font("Tahoma", 14, FontStyle.Regular);
         }
     }
 }
