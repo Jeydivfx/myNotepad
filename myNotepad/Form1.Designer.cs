@@ -47,10 +47,10 @@
             designToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            richTextBox1 = new System.Windows.Forms.RichTextBox();
             viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             zoomInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             zoomOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            richTextBox1 = new System.Windows.Forms.RichTextBox();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -74,29 +74,29 @@
             // newToolStripMenuItem
             // 
             newToolStripMenuItem.Name = "newToolStripMenuItem";
-            newToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
-            newToolStripMenuItem.Text = "New";
+            newToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
+            newToolStripMenuItem.Text = "New (Ctrl+N)";
             newToolStripMenuItem.Click += newToolStripMenuItem_Click;
             // 
             // openToolStripMenuItem
             // 
             openToolStripMenuItem.Name = "openToolStripMenuItem";
-            openToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
-            openToolStripMenuItem.Text = "Open";
+            openToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
+            openToolStripMenuItem.Text = "Open (Ctrl+O)";
             openToolStripMenuItem.Click += openToolStripMenuItem_Click;
             // 
             // saveToolStripMenuItem
             // 
             saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            saveToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
-            saveToolStripMenuItem.Text = "Save";
+            saveToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
+            saveToolStripMenuItem.Text = "Save (Ctrl+S)";
             saveToolStripMenuItem.Click += saveToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
-            exitToolStripMenuItem.Text = "Exit";
+            exitToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
+            exitToolStripMenuItem.Text = "Exit (Ctrl+E)";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
             // editToolStripMenuItem
@@ -109,60 +109,60 @@
             // undoToolStripMenuItem
             // 
             undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            undoToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
-            undoToolStripMenuItem.Text = "Undo";
+            undoToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            undoToolStripMenuItem.Text = "Undo (Ctrl+Z)";
             undoToolStripMenuItem.Click += undoToolStripMenuItem_Click;
             // 
             // redoToolStripMenuItem
             // 
             redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            redoToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
-            redoToolStripMenuItem.Text = "Redo";
+            redoToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            redoToolStripMenuItem.Text = "Redo (Ctrl+Y)";
             redoToolStripMenuItem.Click += redoToolStripMenuItem_Click;
             // 
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new System.Drawing.Size(151, 6);
+            toolStripSeparator1.Size = new System.Drawing.Size(208, 6);
             // 
             // cutToolStripMenuItem
             // 
             cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            cutToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
-            cutToolStripMenuItem.Text = "Cut";
+            cutToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            cutToolStripMenuItem.Text = "Cut (Ctrl+X)";
             cutToolStripMenuItem.Click += cutToolStripMenuItem_Click;
             // 
             // copyToolStripMenuItem
             // 
             copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            copyToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
-            copyToolStripMenuItem.Text = "Copy";
+            copyToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            copyToolStripMenuItem.Text = "Copy (Ctrl+C)";
             copyToolStripMenuItem.Click += copyToolStripMenuItem_Click;
             // 
             // deleteToolStripMenuItem
             // 
             deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            deleteToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
-            deleteToolStripMenuItem.Text = "Delete";
+            deleteToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            deleteToolStripMenuItem.Text = "Delete (Del)";
             deleteToolStripMenuItem.Click += deleteToolStripMenuItem_Click;
             // 
             // pasteToolStripMenuItem
             // 
             pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            pasteToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
-            pasteToolStripMenuItem.Text = "Paste";
+            pasteToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            pasteToolStripMenuItem.Text = "Paste (Ctrl+V)";
             pasteToolStripMenuItem.Click += pasteToolStripMenuItem_Click;
             // 
             // toolStripSeparator2
             // 
             toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new System.Drawing.Size(151, 6);
+            toolStripSeparator2.Size = new System.Drawing.Size(208, 6);
             // 
             // selectAllToolStripMenuItem
             // 
             selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            selectAllToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
-            selectAllToolStripMenuItem.Text = "Select All";
+            selectAllToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            selectAllToolStripMenuItem.Text = "Select All (Ctrl+A)";
             selectAllToolStripMenuItem.Click += selectAllToolStripMenuItem_Click;
             // 
             // designToolStripMenuItem
@@ -186,15 +186,6 @@
             fontToolStripMenuItem.Text = "Font";
             fontToolStripMenuItem.Click += fontToolStripMenuItem_Click;
             // 
-            // richTextBox1
-            // 
-            richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            richTextBox1.Location = new System.Drawing.Point(0, 28);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new System.Drawing.Size(1153, 601);
-            richTextBox1.TabIndex = 1;
-            richTextBox1.Text = "";
-            // 
             // viewToolStripMenuItem
             // 
             viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { zoomInToolStripMenuItem, zoomOutToolStripMenuItem });
@@ -206,14 +197,24 @@
             // 
             zoomInToolStripMenuItem.Name = "zoomInToolStripMenuItem";
             zoomInToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            zoomInToolStripMenuItem.Text = "Zoom In";
+            zoomInToolStripMenuItem.Text = "Zoom In (Ctrl++)";
             zoomInToolStripMenuItem.Click += zoomInToolStripMenuItem_Click;
             // 
             // zoomOutToolStripMenuItem
             // 
             zoomOutToolStripMenuItem.Name = "zoomOutToolStripMenuItem";
             zoomOutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            zoomOutToolStripMenuItem.Text = "Zoom Out";
+            zoomOutToolStripMenuItem.Text = "Zoom Out (Ctrl--)";
+            zoomOutToolStripMenuItem.Click += zoomOutToolStripMenuItem_Click;
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            richTextBox1.Location = new System.Drawing.Point(0, 28);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new System.Drawing.Size(1153, 601);
+            richTextBox1.TabIndex = 1;
+            richTextBox1.Text = "";
             // 
             // Form1
             // 
@@ -222,9 +223,11 @@
             ClientSize = new System.Drawing.Size(1153, 629);
             Controls.Add(richTextBox1);
             Controls.Add(menuStrip1);
+            KeyPreview = true;
             MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "myNotepad";
+            KeyDown += Form1_KeyDown;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

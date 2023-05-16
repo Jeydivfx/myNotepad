@@ -114,5 +114,94 @@ namespace myNotepad
             currentSize += 2.0f;
             richTextBox1.Font = new Font(richTextBox1.Font.Name, currentSize, richTextBox1.Font.Style, richTextBox1.Font.Unit);
         }
+
+        private void zoomOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            float currentSize;
+            currentSize = richTextBox1.Font.Size;
+            currentSize -= 2.0f;
+            richTextBox1.Font = new Font(richTextBox1.Font.Name, currentSize, richTextBox1.Font.Style, richTextBox1.Font.Unit);
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            // implementing key shortcuts for the notepad
+
+            // New file Ctrl+N
+            if (e.Control && e.KeyCode.ToString() == "N")
+            {
+                newToolStripMenuItem_Click(sender, e);
+            }
+
+            // Open a new file Ctrl+O
+            if (e.Control && e.KeyCode.ToString() == "O")
+            {
+                openToolStripMenuItem_Click(sender, e);
+            }
+
+            // Save a new file Ctrl+S
+            if (e.Control && e.KeyCode.ToString() == "S")
+            {
+                saveToolStripMenuItem_Click(sender, e);
+            }
+
+            // Exiting the program
+            if (e.Control && e.KeyCode.ToString() == "E")
+            {
+                exitToolStripMenuItem_Click(sender, e);
+            }
+
+            // Undo a text
+            if (e.Control && e.KeyCode.ToString() == "Z")
+            {
+                undoToolStripMenuItem_Click(sender, e);
+            }
+
+            // Redo a text
+            if (e.Control && e.KeyCode.ToString() == "Y")
+            {
+                redoToolStripMenuItem_Click(sender, e);
+            }
+
+            // Cut a text
+            if (e.Control && e.KeyCode.ToString() == "X")
+            {
+                cutToolStripMenuItem_Click(sender, e);
+            }
+
+            // Copy a text
+            if (e.Control && e.KeyCode.ToString() == "C")
+            {
+                copyToolStripMenuItem_Click(sender, e);
+            }
+
+            // Paste a text
+            if (e.Control && e.KeyCode.ToString() == "V")
+            {
+                pasteToolStripMenuItem_Click(sender, e);
+            }
+
+            // Delete a part of the text
+            if (e.KeyCode.ToString() == "Del")
+            {
+                deleteToolStripMenuItem_Click(sender, e);
+            }
+
+            // Zoom in
+            if (e.Control && e.KeyCode == Keys.Oemplus)
+            {
+                zoomInToolStripMenuItem_Click(sender, e);
+            }
+
+            // Zoom out
+            if (e.Control && e.KeyCode == Keys.OemMinus)
+            {
+                zoomOutToolStripMenuItem_Click(sender, e);
+               
+            }
+
+
+
+        }
     }
 }
